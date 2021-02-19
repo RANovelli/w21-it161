@@ -29,7 +29,7 @@
                 <ul>
                     <li><a href="smo.html"><i class="fa fa-fw fa-thumbs-o-up"></i> SMO</a></li>
                     <li><a href="accessibility.html"><i class="fa fa-fw fa-globe"></i> Accessibility</a></li>
-                    <li><a href="forms.html"><i class="fa fa-fw fa-globe"></i> Forms</a></li>
+                    <li><a href="forms.html"><i class="fa fa-fw fa-comment"></i> Forms</a></li>
                 </ul>
              </li>
              <!-- drop down menu for google tool pages -->
