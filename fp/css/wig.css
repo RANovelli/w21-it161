@@ -1,0 +1,193 @@
+/* Wig Out Website */
+
+html {
+    background-color:#141100;
+}
+
+main {
+    background-color:#141100;
+    color:#fff;
+    width:80%;
+    margin:auto;
+    border:3px solid #00ffd7;
+}
+
+h1 a {
+    background-color:transparent;
+    text-decoration: none;
+    color:#ffd700;
+}
+
+.header {
+    text-align: center;
+    font-weight: bold;
+    font-size: 55px;
+}
+
+.subheader {
+    text-align: center;
+    color:#ffd700;
+}
+
+p {
+    margin: 1em 1em;
+}
+
+p a {
+    text-decoration-line: underline;
+}
+
+p a:hover {
+    color: #00ffd7;
+}
+
+section {
+    float:left;
+    width:65%;
+    text-align: center;
+}
+
+.kevin {
+    width:80%;
+    border:1px solid #ffd700;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+aside {
+    float:right;
+    width:34%;
+    text-align: center;
+}
+
+aside a:hover {
+    color: #00ffd7;
+    text-decoration: underline;
+}
+
+h3 a {
+    display: block;
+    font-size: 1.17em;
+    font-weight: bold;
+    color:#ffd700;
+}
+
+address {
+    display: block;
+    font-style:italic;
+}
+
+.phone {
+    text-decoration-line: underline;
+}
+
+.wigsign {
+    width:80%;
+    border:1px solid #00ffd7;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+}
+
+.byc {
+    width:80%;
+    border:1px solid #00ffd7;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+}
+
+.dance {
+    width:80%;
+    border:1px solid #00ffd7;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+}
+
+.fullwidth {
+    width:100%;
+}
+
+img {
+    width:100%;
+    border:1px solid #000; /* width style color */
+}
+
+div.gallery {
+    text-align:center;
+}
+
+figure {
+    display:inline-block;
+    margin:.25%;
+}
+
+/* START RESPONSIVE STYLES */
+
+.embed-container { 
+    position: relative; 
+    padding-bottom: 56.25%; 
+    height: 0; 
+    overflow: hidden; 
+    max-width: 100%; 
+} 
+
+.embed-container iframe { 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+}
+
+/* END RESPONSIVE STYLES */
+
+/* HIDE AGENDA VIEW CALENDAR */
+div.embed-container.agenda-view {
+    display:none;
+}
+
+footer {
+    padding:1em;
+    text-align:center;
+    clear:both;
+}
+
+/* CALENDAR RULES FOR PHONE */
+
+@media all and (max-width:1000px) {
+
+    /* Show AGENDA VIEW Calendar */
+    div.embed-container.agenda-view {
+        display:block;
+    }
+
+    /* Hide MONTH VIEW Calendar */
+    div.embed-container.month-view {
+        display:none;
+    }
+}
+
+/* MOBILE STYLES */
+
+@media all and (max-width:600px) {
+    
+    main {
+    width:100%;
+    }
+   section {
+    float:none;
+    width:100%;
+    }
+
+    aside {
+        float:none;
+        width:100%;
+    } 
+}
+

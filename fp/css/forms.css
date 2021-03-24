@@ -1,0 +1,230 @@
+/* Wig Out Website */
+
+html {
+    background-color:#141100;
+}
+
+main {
+    background-color:#141100;
+    color:#fff;
+    width:80%;
+    margin:auto;
+    border:3px solid #00ffd7;
+}
+
+h1 a {
+    background-color:transparent;
+    text-decoration: none;
+    color:#ffd700;
+}
+
+.header {
+    text-align: center;
+    font-weight: bold;
+    font-size: 55px;
+}
+
+.subheader {
+    text-align: center;
+    color:#ffd700;
+}
+
+p {
+    margin: 1em 1em;
+}
+
+p a {
+    text-decoration-line: underline;
+}
+
+p a:hover {
+    color: #00ffd7;
+}
+
+section {
+    float:left;
+    width:65%;
+    text-align: center;
+}
+
+.kevin {
+    width:80%;
+    border:1px solid #ffd700;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+aside {
+    float:right;
+    width:34%;
+    text-align: center;
+}
+
+aside a:hover {
+    color: #00ffd7;
+    text-decoration: underline;
+}
+
+h3 a {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    color:#ffd700;
+}
+
+address {
+    display: block;
+    font-style:italic;
+}
+
+.phone {
+    text-decoration-line: underline;
+}
+
+.wigsign {
+    width:80%;
+    border:1px solid #00ffd7;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+}
+
+img {
+    width:100%;
+    border:1px solid #000; /* width style color */
+}
+
+div.gallery {
+    text-align:center;
+}
+
+figure {
+    display:inline-block;
+    margin:.25%;
+}
+
+.form {
+    width:80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+/* START RESPONSIVE STYLES */
+
+.embed-container { 
+    position: relative; 
+    padding-bottom: 56.25%; 
+    height: 0; 
+    overflow: hidden; 
+    max-width: 100%; 
+} 
+
+.embed-container iframe { 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+}
+
+/* END RESPONSIVE STYLES */
+
+/* HIDE AGENDA VIEW CALENDAR */
+div.embed-container.agenda-view {
+    display:none;
+}
+
+footer {
+    padding:1em;
+    text-align:center;
+    clear:both;
+}
+
+/* CALENDAR RULES FOR PHONE */
+
+@media all and (max-width:1000px) {
+
+    /* Show AGENDA VIEW Calendar */
+    div.embed-container.agenda-view {
+        display:block;
+    }
+
+    /* Hide MONTH VIEW Calendar */
+    div.embed-container.month-view {
+        display:none;
+    }
+}
+
+/* MOBILE STYLES */
+
+@media all and (max-width:600px) {
+    
+    main {
+    width:100%;
+    }
+   section {
+    float:none;
+    width:100%;
+    }
+
+    aside {
+        float:none;
+        width:100%;
+    } 
+}
+
+        /* start reCAPTCHA styles */
+		
+		/* writes to small text above reCAPTCHA upon failure */
+		.dateFeedback{
+			font-style:italic;
+			font-size:70%;
+			font-weight:bold;
+			color:#f00;
+		}
+        input:required {
+              border: 1px solid red;
+        }
+
+         input:optional, textarea:optional {
+             background-color:#f1f1f1;
+             border:1px solid #ccc;
+        }
+
+        input[type="submit"], input[type="button"] {
+          background-color: #fff;
+          border-radius: 4px;
+          border: solid 1px #ccc;
+          padding: 0.3em 0.5em;
+        }
+
+        fieldset {
+          border: 1px solid #ccc;
+          max-width: 350px;
+        }
+
+        legend {
+          margin-left: 0.5em;
+          padding: 0.2em 0.5em;
+          border-left: 1px solid #ccc;
+          border-right: 1px solid #ccc;
+        }
+        
+        /* end reCAPTCHA styles */
+
+/* keeps form from bunching up to left */
+
+@media all and (min-width:501px){
+    div.wrapper form{
+        margin-left:22.8px;
+
+    }
+}
